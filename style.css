@@ -19,21 +19,44 @@
     transition: background-color 0.5s, color 0.3s;
 }
 
+#nav ul {
+    display: flex;
+    height: 44px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+}
+
 #nav a:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
 
+/* #nav button-nav {
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.5s, color 0.3s;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    float: right;
+} */
 .logo {
     width: 200px;
     height: 60px;
 }
 
 .search-container {
-    margin-left: auto; 
+    margin-left: 400px;
     display: flex;
     align-items: center;
     margin-right: 20px;
+    float: right;
 }
 
 .search-input {
