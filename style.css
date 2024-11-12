@@ -73,7 +73,7 @@ body {
 }
 
 .banner {
-    margin-top: 80px;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -104,7 +104,7 @@ body {
     border-radius: 5px;
 }
 
-.featured-section {
+.best-sellers{
     text-align: center;
     padding: 50px 20px;
 }
@@ -114,16 +114,17 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
 .product-item {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 200px;
+    width: 400px;
+    height: 390px;
     text-align: center;
 }
 
@@ -145,13 +146,23 @@ body {
 
 .buy-button {
     background-color: #ff6600;
-    color: white;
-    padding: 8px 15px;
-    border: none;
+    padding: 8px 10px;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
+.view-all{
+    margin
+}
+.view-all-button{
+    background-color: #ff6600;
+    padding: 20px,40px;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
 footer {
     background-color: #333;
     color: white;
