@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     margin: 0px;
+    animation: trans 0.3s;
 }
 
 #nav {
@@ -31,6 +32,7 @@ body {
     align-items: center;
     list-style-type: none;
     gap: 20px;
+    padding-left: 3%;
 }
 
 .select {
@@ -46,9 +48,9 @@ body {
 }
 
 .logo {
-    width: 200px;
-    height: 60px;
-    margin-right: 20px; 
+    width: 300px;
+    height: 80px;
+    margin-right: 10px; 
 }
 
 .search-container {
@@ -75,6 +77,7 @@ body {
 .banner {
     margin-top: 10px;
     position: relative;
+    animation: side 1s;
 }
 
 .banner-img {
@@ -121,13 +124,17 @@ body {
     margin: 0 auto;
 }
 
-.products{
+.item-grids{
     display: flex;
     justify-content: center;
-    gap:15px;
+    gap: 40px;
     flex-wrap: wrap;
-    max-width: 1800px;
-    margin: auto;
+    max-width: 2000px;
+}
+
+.products{
+    text-align: center;
+    margin:auto 120px 20px 400px;
 }
 
 .product-item {
@@ -138,6 +145,7 @@ body {
     width: 400px;
     height: 390px;
     text-align: center;
+    animation: up 2s;
 }
 
 .product-item-all {
@@ -197,29 +205,37 @@ body {
     margin-left: 50px;
     margin-bottom: 40px;
     margin-right: 20px;
+    padding: 5%;
+    float: right;
+    background-color: #ff66007f;
+    position: fixed;
+    border-radius: 10px;
 }
 
-aside {
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
-  }
-
-  aside {
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
-  }
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
     margin: 0px;
+}
+
+/*animtions*/
+@keyframes side {
+    from { transform: translateX(-100%);
+    opacity: 0; }
+    to { transform: translateX(0); 
+    opacity: 1;}
+}
+
+@keyframes up {
+    from {transform: translateY(100%);
+    opacity: 0;}
+    to {transform: translateY(0);
+    opacity: 1;}
+}
+
+@keyframes trans{
+    from {opacity: 0;}
+    to{opacity:1;}
 }
