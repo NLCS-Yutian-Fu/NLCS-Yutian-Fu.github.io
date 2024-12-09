@@ -7,7 +7,6 @@ body {
 }
 
 #nav {
-    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
@@ -16,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1000;
-    
 }
 
 #nav nav {
@@ -130,6 +128,7 @@ body {
     gap: 40px;
     flex-wrap: wrap;
     max-width: 2000px;
+    animation: side_r 0.5s;
 }
 
 .products{
@@ -186,8 +185,8 @@ body {
 }
 
 .view-all{
-    margin:10px;
-    padding: 20px; 
+    display: block;
+    padding: 20px 0px 30px 0px;
 }
 
 .view-all-button{
@@ -197,11 +196,11 @@ body {
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 5px 3px 3px #616161a0;
-
 }
-.title{
+.title-f{
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
 }
 .filter {
     margin-top: 100px;
@@ -210,9 +209,11 @@ body {
     margin-right: 20px;
     padding: 5%;
     float: right;
-    background-color: #ff66007f;
+    background-color: #ff7d277f;
     position: fixed;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
+    animation: side 0.5s;
 }
 
 footer {
@@ -222,10 +223,37 @@ footer {
     padding: 20px;
     margin: 0px;
 }
+.heading{
+    background-color: #fac5c5dd;
+    border-radius: 50px;
+    margin: 10% 100px 20px 100px;
+    animation: down 0.5s;
+}
+
+.title{
+    text-decoration: double;
+    font-family: cursive;
+    color: #ff6600;
+    text-align: center;
+    text-shadow: #000;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.men{
+    background-image: url(background.webp);
+}
 
 /*animtions*/
 @keyframes side {
     from { transform: translateX(-100%);
+    opacity: 0; }
+    to { transform: translateX(0); 
+    opacity: 1;}
+}
+
+@keyframes side_r {
+    from { transform: translateX(100%);
     opacity: 0; }
     to { transform: translateX(0); 
     opacity: 1;}
@@ -237,6 +265,14 @@ footer {
     to {transform: translateY(0);
     opacity: 1;}
 }
+
+@keyframes down {
+    from {transform: translateY(-100%);
+    opacity: 0;}
+    to {transform: translateY(0);
+    opacity: 1;}
+}
+
 
 @keyframes trans{
     from {opacity: 0;}
